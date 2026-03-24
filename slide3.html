@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UAM과 멀티로터 드론의 부상</title>
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * { font-family: 'Noto Sans KR', sans-serif; }
+        .slide { width: 1920px; height: 1080px; }
+        .gradient-bg {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        }
+    </style>
+</head>
+<body class="m-0 p-0 overflow-hidden">
+    <div class="slide gradient-bg relative p-16">
+        <!-- Header -->
+        <div class="flex items-center mb-10">
+            <div class="bg-gradient-to-r from-blue-600 to-cyan-500 rounded-2xl px-8 py-4">
+                <h1 class="text-4xl font-bold text-white">
+                    <i class="fas fa-city mr-4"></i>UAM(Urban Air Mobility)과 멀티로터 드론의 부상
+                </h1>
+            </div>
+            <div class="flex-1 h-1 bg-gradient-to-r from-cyan-500 to-transparent ml-8"></div>
+        </div>
+        
+        <!-- Main Content Grid -->
+        <div class="grid grid-cols-2 gap-10 h-[800px]">
+            <!-- Left Column -->
+            <div class="flex flex-col gap-6">
+                <!-- UAM Market Growth -->
+                <div class="bg-gradient-to-br from-blue-900/50 to-slate-800/50 rounded-2xl p-6 border border-blue-500/30 flex-1">
+                    <h3 class="text-2xl font-bold text-cyan-400 mb-4">
+                        <i class="fas fa-chart-line mr-3"></i>UAM 시장의 급격한 성장
+                    </h3>
+                    <div class="flex items-center gap-6">
+                        <div class="flex-1">
+                            <ul class="space-y-3 text-gray-200 text-lg">
+                                <li><i class="fas fa-arrow-up text-green-400 mr-2"></i>2030년까지 연평균 30%+ 성장 전망</li>
+                                <li><i class="fas fa-globe text-blue-400 mr-2"></i>글로벌 도심 항공 모빌리티 시장 확대</li>
+                                <li><i class="fas fa-building text-purple-400 mr-2"></i>주요 도시 인프라 구축 진행 중</li>
+                            </ul>
+                        </div>
+                        <div class="w-48 h-32 bg-gradient-to-t from-cyan-600 to-blue-600 rounded-xl flex items-end justify-around p-2">
+                            <div class="bg-white/80 w-8 rounded-t" style="height: 30%"></div>
+                            <div class="bg-white/80 w-8 rounded-t" style="height: 50%"></div>
+                            <div class="bg-white/80 w-8 rounded-t" style="height: 75%"></div>
+                            <div class="bg-white/80 w-8 rounded-t" style="height: 100%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Multirotor Characteristics -->
+                <div class="bg-gradient-to-br from-purple-900/50 to-slate-800/50 rounded-2xl p-6 border border-purple-500/30 flex-1">
+                    <h3 class="text-2xl font-bold text-purple-400 mb-4">
+                        <i class="fas fa-helicopter mr-3"></i>멀티로터 드론의 특수성
+                    </h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-slate-800/60 rounded-xl p-4 text-center">
+                            <i class="fas fa-bolt text-yellow-400 text-3xl mb-2"></i>
+                            <p class="text-white font-medium">분산 전기 추진</p>
+                            <p class="text-gray-400 text-sm">Distributed Electric Propulsion</p>
+                        </div>
+                        <div class="bg-slate-800/60 rounded-xl p-4 text-center">
+                            <i class="fas fa-arrows-alt-v text-green-400 text-3xl mb-2"></i>
+                            <p class="text-white font-medium">VTOL 능력</p>
+                            <p class="text-gray-400 text-sm">수직 이착륙</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right Column -->
+            <div class="flex flex-col gap-6">
+                <!-- Complex Aerodynamics -->
+                <div class="bg-gradient-to-br from-orange-900/50 to-slate-800/50 rounded-2xl p-6 border border-orange-500/30 flex-1">
+                    <h3 class="text-2xl font-bold text-orange-400 mb-4">
+                        <i class="fas fa-wind mr-3"></i>복잡한 공력 환경
+                    </h3>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="flex items-center bg-slate-800/60 rounded-lg p-3">
+                            <i class="fas fa-sync-alt text-red-400 text-2xl mr-3"></i>
+                            <span class="text-gray-200">로터 간섭</span>
+                        </div>
+                        <div class="flex items-center bg-slate-800/60 rounded-lg p-3">
+                            <i class="fas fa-arrow-down text-blue-400 text-2xl mr-3"></i>
+                            <span class="text-gray-200">프로펠러 Downwash</span>
+                        </div>
+                        <div class="flex items-center bg-slate-800/60 rounded-lg p-3">
+                            <i class="fas fa-mountain text-green-400 text-2xl mr-3"></i>
+                            <span class="text-gray-200">지면 효과</span>
+                        </div>
+                        <div class="flex items-center bg-slate-800/60 rounded-lg p-3">
+                            <i class="fas fa-random text-purple-400 text-2xl mr-3"></i>
+                            <span class="text-gray-200">난류 효과</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Importance -->
+                <div class="bg-gradient-to-br from-emerald-900/50 to-slate-800/50 rounded-2xl p-6 border border-emerald-500/30 flex-1">
+                    <h3 class="text-2xl font-bold text-emerald-400 mb-4">
+                        <i class="fas fa-bullseye mr-3"></i>정확한 공력 모델의 중요성
+                    </h3>
+                    <div class="flex gap-4 justify-around">
+                        <div class="text-center">
+                            <div class="w-20 h-20 bg-emerald-600/30 rounded-full flex items-center justify-center mb-2 mx-auto border-2 border-emerald-500">
+                                <i class="fas fa-arrow-up text-emerald-400 text-3xl"></i>
+                            </div>
+                            <p class="text-white font-medium">양력 예측</p>
+                            <p class="text-emerald-400 text-xl font-bold">C<sub>L</sub></p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-20 h-20 bg-red-600/30 rounded-full flex items-center justify-center mb-2 mx-auto border-2 border-red-500">
+                                <i class="fas fa-arrow-left text-red-400 text-3xl"></i>
+                            </div>
+                            <p class="text-white font-medium">항력 예측</p>
+                            <p class="text-red-400 text-xl font-bold">C<sub>D</sub></p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-20 h-20 bg-yellow-600/30 rounded-full flex items-center justify-center mb-2 mx-auto border-2 border-yellow-500">
+                                <i class="fas fa-redo text-yellow-400 text-3xl"></i>
+                            </div>
+                            <p class="text-white font-medium">모멘트 예측</p>
+                            <p class="text-yellow-400 text-xl font-bold">C<sub>M</sub></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slide Number -->
+        <div class="absolute bottom-8 right-8 text-gray-500 text-xl">3 / 40</div>
+    </div>
+</body>
+</html>
+
+
+

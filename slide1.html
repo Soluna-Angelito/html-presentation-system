@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Based Aerodynamic Coefficient Prediction - Title</title>
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * { font-family: 'Noto Sans KR', sans-serif; }
+        .slide { width: 1920px; height: 1080px; }
+        .gradient-bg {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 50%, #0f172a 100%);
+        }
+        .glow-text {
+            text-shadow: 0 0 40px rgba(59, 130, 246, 0.5);
+        }
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        .drone-grid {
+            background-image: 
+                linear-gradient(rgba(59, 130, 246, 0.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(59, 130, 246, 0.1) 1px, transparent 1px);
+            background-size: 50px 50px;
+        }
+    </style>
+</head>
+<body class="m-0 p-0 overflow-hidden">
+    <div class="slide gradient-bg drone-grid relative flex flex-col justify-center items-center">
+        <!-- Decorative Elements -->
+        <div class="absolute top-20 left-20 w-32 h-32 border-2 border-blue-500/30 rounded-full floating"></div>
+        <div class="absolute bottom-32 right-32 w-48 h-48 border-2 border-cyan-400/20 rounded-full floating" style="animation-delay: -2s;"></div>
+        <div class="absolute top-40 right-40 w-20 h-20 border border-blue-400/40 rounded-full floating" style="animation-delay: -4s;"></div>
+        
+        <!-- Main Content -->
+        <div class="text-center z-10 px-20">
+            <!-- Icon -->
+            <div class="mb-8">
+                <i class="fas fa-helicopter text-8xl text-cyan-400 floating"></i>
+            </div>
+            
+            <!-- Title -->
+            <h1 class="text-7xl font-bold text-white mb-6 glow-text leading-tight">
+                AI-Based Aerodynamic Coefficient<br>Prediction for Multirotor Drones
+            </h1>
+            
+            <!-- Subtitle -->
+            <div class="bg-gradient-to-r from-blue-600/80 to-cyan-500/80 rounded-2xl px-12 py-6 inline-block mb-12">
+                <h2 class="text-3xl font-medium text-white">
+                    <i class="fas fa-wind mr-4"></i>
+                    풍동 실험 없이 비행 데이터로 공력 계수 예측하기
+                </h2>
+            </div>
+            
+            <!-- Keywords -->
+            <div class="flex justify-center gap-6 mb-16">
+                <span class="bg-blue-900/50 border border-blue-500/50 rounded-full px-6 py-3 text-blue-300 text-xl">
+                    <i class="fas fa-brain mr-2"></i>Deep Learning
+                </span>
+                <span class="bg-blue-900/50 border border-blue-500/50 rounded-full px-6 py-3 text-blue-300 text-xl">
+                    <i class="fas fa-plane mr-2"></i>UAM
+                </span>
+                <span class="bg-blue-900/50 border border-blue-500/50 rounded-full px-6 py-3 text-blue-300 text-xl">
+                    <i class="fas fa-chart-line mr-2"></i>System ID
+                </span>
+                <span class="bg-blue-900/50 border border-blue-500/50 rounded-full px-6 py-3 text-blue-300 text-xl">
+                    <i class="fas fa-cogs mr-2"></i>Flight Data
+                </span>
+            </div>
+            
+            <!-- Date -->
+            <p class="text-2xl text-gray-400">
+                <i class="far fa-calendar-alt mr-3"></i>December 2024
+            </p>
+        </div>
+        
+        <!-- Bottom Decorative Line -->
+        <div class="absolute bottom-0 left-0 right-0 h-2 bg-gradient-to-r from-transparent via-cyan-500 to-transparent"></div>
+        
+        <!-- Corner Decorations -->
+        <div class="absolute top-8 left-8 text-blue-500/30 text-6xl">
+            <i class="fas fa-drone"></i>
+        </div>
+        <div class="absolute bottom-8 right-8 text-blue-500/30 text-6xl">
+            <i class="fas fa-microchip"></i>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
