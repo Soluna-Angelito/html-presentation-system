@@ -1,59 +1,46 @@
 ﻿# Quick Start
 
-Use this when you just need to run or edit the presentation quickly.
+## 1) Prepare files
 
-## 1) Open the project
-
-Keep these files together:
+Keep `presentation.html` with your slide files:
 
 ```text
 presentation.html
 slide1.html
 slide2.html
-slide3.html
-slide4.html
-slide5.html
-slide6.html
+...
+slideN.html
 ```
 
-## 2) Launch
+## 2) Configure
 
-Open `presentation.html` in your browser.
+At the top of `presentation.html`:
 
-## 3) Navigate
+```js
+const TOTAL_SLIDES  = 6;    // change to your real slide count
+const ALLOW_UPSCALE = true; // true: allow scaling above 100% on large displays
+```
+
+## 3) Run
+
+Open `presentation.html` in a modern browser.
+
+## 4) Controls
 
 - Next: `ArrowRight` / `Space`
 - Previous: `ArrowLeft`
-- Overview grid: `O`
+- Overview: `O`
 - Fullscreen: `F`
 - Hide/show UI: `H`
 
-## 4) Update slide count (when adding slides)
+## 5) Common edits
 
-Edit the top of `presentation.html`:
+- Add or remove slides: update `TOTAL_SLIDES`
+- Change file naming (for example `page1.html`):
 
 ```js
-const TOTAL_SLIDES  = 6;    // set this to your real slide count
-const ALLOW_UPSCALE = true; // true = allow >100% scale on large displays
+slideFilePrefix: 'page',
+slideFileExtension: '.html',
 ```
 
-If you add `slide7.html`, change `TOTAL_SLIDES` to `7`, and so on.
-
-## 5) Typical edit workflow
-
-1. Edit one or more `slideN.html` files.
-2. Refresh the browser tab.
-3. Press `O` to verify thumbnails in overview mode.
-4. Test keyboard navigation from first to last slide.
-
-## 6) Optional advanced config
-
-Inside `presentation.html`, edit `CONFIG` to tune:
-
-- `eagerLoadCount`
-- `preloadAdjacent`
-- `overviewCols`
-- `overviewScale`
-- `wheelThrottle`
-
-See `USER_GUIDE.md` for full details and caveats.
+See `USER_GUIDE.md` for full config and troubleshooting.
